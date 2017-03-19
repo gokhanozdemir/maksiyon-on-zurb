@@ -1,0 +1,224 @@
+//
+// Modified BEM chaining
+//  js-hook block__element--variation -modifier h-helper is-state
+
+@import '../font/fontello/css/fontello.scss';
+
+$c-header-item-height: 50px;
+
+body {
+  background-color: #e7ebee;
+}
+
+%trans {
+  transition: background-color 200ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.button {
+  float: left;
+  height: 100%;;
+}
+
+
+%transparent-button {
+  .button {
+      transition: opacity 200ms ease-in-out;
+      background: transparent;
+      height: 100%;
+      opacity: .5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+.callout {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.o-header {
+  background-color: darkslategray;
+  display: flex;
+  align-items: center;
+
+  &__actionbox {
+    height: 100%;
+  }
+
+  &__quick-add {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+
+    input {
+      @extend %trans;
+      color: white;
+      height: inherit;
+      background-color: transparent;
+      
+      &:focus,
+      &:hover{
+        color: gray;
+        background-color: white;
+      }
+    }
+  }
+
+  &__user-pane {
+    @extend %transparent-button;
+    padding-left: .5rem;
+    & .button {
+      padding: 0.6rem 0.3rem;
+    }
+    
+  }
+
+}
+
+.c-app-item {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  // flex-grow: 1;
+  min-width: 330px;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  &__icon {
+    height: $c-header-item-height / 3 * 2;
+    margin-right: 10px;
+
+    &--header {
+      height: $c-header-item-height;
+      margin-right: 10px;
+    }
+  }
+
+  &__title {
+    flex-grow: 1;
+    font-size: .8rem;
+    
+    &--header {
+      flex-grow: 1;
+      font-size: 1rem;
+    }
+
+  }
+
+  &__sub {
+    font-size: .5rem;
+
+    &--header {
+      font-size: .6rem;
+    }
+  }
+
+  &__type {
+    padding: 0.6rem;
+  }
+
+}
+
+
+.c-3ple-line {
+  // width: 500px; // delete me
+  display: flex;
+  align-items: center;
+  text-align: center;
+  & input,
+  button {
+    margin: 0;
+  }
+
+  &__start {
+    min-width: $c-header-item-height;
+  }
+
+  &__center {
+    flex-grow: 1;
+
+  }
+
+  &__end {
+    
+  }
+}
+
+
+.o-my-apps {
+  // min-width: 500px;
+  width: auto;
+
+  &__list {
+    background-color: #e7ebee;
+    // border-top: 2px solid white;
+    display: inline-flex;
+    flex-flow: column nowrap;
+  }
+  &__item {
+    display: inline-flex;
+  }
+  
+  &__control {
+
+  }
+  
+  .c-app-item {
+    padding: 0px 0 0px 8px;
+
+    &:first-of-type {
+      // padding: 8px 10px 4px;
+    }
+  }
+
+}
+
+.-semi-trans {
+  opacity: .5
+}
+
+.-pad {
+  padding: 8px 10px!important;
+  background: red;
+}
+  
+
+.-dark-bg {
+  @extend %trans;
+  background-color: #333;
+  color: #fff;
+
+  &:hover {
+    background-color: #e7ebee;
+    color: #333;
+  }
+}
+
+.-light-bg {
+  @extend %trans;
+  background-color: #e7ebee;
+  color: #333;
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+.dropdown-pane { // zurb component extension
+  //position hack
+  box-shadow: 3px 3px 15px #777;
+  transform: translate3d(-2px, -4px, 0)
+}
+
+.input-group {
+  margin: 0;
+  padding: 0;
+  border:0;
+}
