@@ -1,0 +1,32 @@
+<div class="row expanded">
+  <div class="large-12 columns o-header">
+    <div class="c-app-item -relative -dark-bg" data-toggle="js-my-apps">
+      <div class="c-app-item__icon--header"><img src="{{thepage.img}}" alt="{{thepage.title}}"></div>
+      <div class="c-app-item__title--header">{{thepage.title}}
+        <div class="c-app-item__sub--header">{{thepage.info}}</div>
+      </div>
+      <div class="c-app-item__type">
+        <span class="show-for-sr">from Apple AppStore</span>
+        <span aria-hidden="true"><i class="icon-apple -semi-trans"></i></span>
+      </div>
+      {{> pane-my-apps}}
+    </div>
+    <div class="o-header__actionbox" data-toggle="js-my-apps">
+      <button class="button secondary" type="button">
+        <span class="show-for-sr">App List</span>
+        <span aria-hidden="true"><i class="icon-th-list"></i></span>
+      </button>
+      {{> btn-delete}}
+    </div>
+    <div class="o-header__quick-add" data-toggle="js-search">
+      <input type="text" placeholder="Search to track an app or add as competitor" />
+       {{> btn-search}}
+       {{> pane-search}}
+    </div>
+    <div class="o-header__user-pane">
+      <a class="button icon-cog"></a>
+      <a class="button icon-bookmark-1"></a>
+      <a class="button icon-user-circle"></a>
+    </div>
+  </div>
+</div> 

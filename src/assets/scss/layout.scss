@@ -34,7 +34,7 @@ body {
 }
 
 .o-header {
-  background-color: darkslategray;
+  background-color: #31404f;
   display: flex;
   align-items: center;
 
@@ -83,6 +83,7 @@ body {
   img {
     height: 100%;
     width: auto;
+    border-radius: 3px;
   }
 
   &__icon {
