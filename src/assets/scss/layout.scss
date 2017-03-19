@@ -34,9 +34,10 @@ body {
 }
 
 .o-header {
+  align-items: center;
   background-color: #31404f;
   display: flex;
-  align-items: center;
+  margin-bottom: $global-margin;
 
   &__actionbox {
     height: 100%;
@@ -72,6 +73,17 @@ body {
     
   }
 
+}
+.o-pane-appcard {
+  min-width: 500px;
+}
+
+.o-version-tabs {
+  // overflow-y: scroll;
+  .vertical {
+    height: 220px;
+    overflow-y: scroll;
+  }
 }
 
 .c-app-item {
@@ -189,8 +201,3 @@ body {
   transform: translate3d(-2px, -4px, 0)
 }
 
-.input-group {
-  margin: 0;
-  padding: 0;
-  border:0;
-}

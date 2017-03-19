@@ -11,13 +11,18 @@
       </div>
       {{> pane-my-apps}}
     </div>
-    <div class="o-header__actionbox" data-toggle="js-my-apps">
+    <div class="o-header__actionbox" data-toggle="js-app-card">
+      <button class="button primary" type="button">
+        <span class="show-for-sr">App Details</span>
+        <span aria-hidden="true"><i class="icon-emo-sunglasses icon-address-card"></i></span>
+      </button>
       <button class="button secondary" type="button">
         <span class="show-for-sr">App List</span>
         <span aria-hidden="true"><i class="icon-th-list"></i></span>
       </button>
       {{> btn-delete}}
     </div>
+    {{> pane-appcard}}
     <div class="o-header__quick-add" data-toggle="js-search">
       <input type="text" placeholder="type here to track an app or add as competitor" />
        {{> btn-search}}

@@ -1,0 +1,35 @@
+<!--dropdown-panes-->
+<div class="dropdown-pane o-pane-appcard" id="js-app-card" data-dropdown data-hover="true" data-hover-pane="true">
+
+  {{> card-version}}
+
+  {{> card-slider}}  
+  
+
+  {{app-info.name}} <br>
+  <img src="{{app-info.icon}}" alt=""> <br>
+  {{app-info.category.name}} <br>
+  {{app-info.category.id}} <br>
+  {{app-info.price}} <br>
+  {{app-info.latestUpdate}} <br>
+  {{app-info.description}} <br>
+  {{app-info.publisher}} <br>
+  <!-- <br>-->
+      
+  {{app-info.store}} <br>
+  {{app-info.store}} <br>
+
+
+
+  {{app-info.hasInAppPurchases}} <br>
+  {{app-info.rating}} <br>
+  {{app-info.isValid}} <br>
+  <label>Select Menu
+  <select>
+    {{#each app-info.countryList}}
+    <option value="{{this}}">{{this}} {{@index}}</option>
+    {{/each}}
+  </select>
+</label>
+  
+</div>
