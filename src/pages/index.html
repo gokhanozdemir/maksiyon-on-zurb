@@ -9,11 +9,27 @@ tinder:
  title: Tinder
  info: Tinder Inc.
 
----
+search:
+ - img: https://insights.mobileaction.co/app-image?url=http%3A%2F%2Fis3.mzstatic.com%2Fimage%2Fthumb%2FPurple20%2Fv4%2F15%2F7e%2Fd9%2F157ed9d9-0082-8fed-bed0-6bed211292ca%2Fsource%2F60x60bb.jpg
+   title: Musicloud
+   info: Music Player For Cloud Platforms
+   storetype: apple
+   storename: Apple Appstore
+ - img: https://insights.mobileaction.co/app-image?url=http%3A%2F%2Fis5.mzstatic.com%2Fimage%2Fthumb%2FPurple60%2Fv4%2F84%2F53%2F57%2F84535792-46ad-4acc-632e-03d5df575be2%2Fsource%2F60x60bb.jpg
+   title: Music HD.ITube Player
+   info: Free Music Video Player & Streamer for YouTube, SoundCloud
+   storetype: android
+   storename: Google Playstore
+ - img: https://insights.mobileaction.co/app-image?url=http%3A%2F%2Fis2.mzstatic.com%2Fimage%2Fthumb%2FPurple49%2Fv4%2F01%2Fd6%2F6d%2F01d66d3f-96b3-ebec-0dd1-8db0ecee174f%2Fsource%2F60x60bb.jpg
+   title: musical.ly - 
+   info: Your video community
+   storetype: apple
+   storename: Apple Appstore
 
+---
 <div class="row expanded">
   <div class="large-12 columns o-header">
-    <div class="c-app-item -dark-bg" data-toggle="js-my-apps">
+    <div class="c-app-item -relative -dark-bg" data-toggle="js-my-apps">
       <div class="c-app-item__icon--header"><img src="{{thepage.img}}" alt="{{thepage.title}}"></div>
       <div class="c-app-item__title--header">{{thepage.title}}
         <div class="c-app-item__sub--header">{{thepage.info}}</div>
@@ -22,6 +38,7 @@ tinder:
         <span class="show-for-sr">from Apple AppStore</span>
         <span aria-hidden="true"><i class="icon-apple -semi-trans"></i></span>
       </div>
+      {{> pane-my-apps}}
     </div>
     <div class="o-header__actionbox" data-toggle="js-my-apps">
       <button class="button secondary" type="button">
@@ -30,10 +47,11 @@ tinder:
       </button>
       {{> btn-delete}}
     </div>
-    <div class="o-header__quick-add">
+    <div class="o-header__quick-add" data-toggle="js-search">
       <input type="text" placeholder="Search to track an app or add as competitor" />
        {{> btn-search}}
-      </div>
+       {{> pane-search}}
+    </div>
     <div class="o-header__user-pane">
       <a class="button icon-cog"></a>
       <a class="button icon-bookmark-1"></a>
@@ -42,58 +60,8 @@ tinder:
   </div>
 </div> 
 
-<!--dropdown-panes-->
-<div class="dropdown-pane o-my-apps" id="js-my-apps" data-dropdown data-auto-focus="true">
-  <form class="c-add-app">
-    <div class="c-3ple-line">
-      <div class="c-3ple-line__start -semi-trans"><i class="icon-th-thumb"></i></div>
-      <div class="c-3ple-line__center"><input class="" type="text" placeholder="Filter you apps"></div>
-      <div class="c-3ple-line__end">
-        {{> btn-search}}
-        </div>
-    </div>
-  </form>
-  <div class="o-my-apps__list">
-    <!--start row-->
-    <div class="o-my-apps__item">
-      <div class="c-app-item -light-bg">
-      <div class="c-app-item__icon"><img src="{{thepage.img}}" alt="{{thepage.title}}"></div>
-      <div class="c-app-item__title">{{thepage.title}}
-        <div class="c-app-item__sub">{{thepage.info}}</div>
-      </div>
-      <div class="c-app-item__type">
-        <span class="show-for-sr">from Apple AppStore</span>
-        <span aria-hidden="true"><i class="icon-apple -semi-trans"></i></span>
-      </div>
-    </div>
-    <div class="o-my-apps__control">
-      {{> btn-edit}}
-      {{> btn-delete}}
-    </div>
-  </div>
-    
-  <!--start row-->
-  <div class="o-my-apps__item">
-    <div class="c-app-item -light-bg">
-      <div class="c-app-item__icon"><img src="{{tinder.img}}" alt="{{tinder.title}}"></div>
-      <div class="c-app-item__title">{{tinder.title}}
-        <div class="c-app-item__sub">{{tinder.info}}</div>
-      </div>
-      <div class="c-app-item__type">
-        <span class="show-for-sr">from Google Playstore</span>
-        <span aria-hidden="true"><i class="icon-android -semi-trans"></i></span>
-      </div>
-    </div>
-    <div class="o-my-apps__control">
-      {{> btn-edit}}
-      {{> btn-delete}}
-    </div>
-  </div>
-</div>
 
 
-  
-</div>
 
 <div class="row">
   <div class="large-12 columns">

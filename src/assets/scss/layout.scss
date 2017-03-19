@@ -14,12 +14,6 @@ body {
   transition: background-color 200ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
-.button {
-  float: left;
-  height: 100%;;
-}
-
-
 %transparent-button {
   .button {
       transition: opacity 200ms ease-in-out;
@@ -50,8 +44,9 @@ body {
 
   &__quick-add {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 5;
     height: 100%;
+    position: relative;
 
     input {
       @extend %trans;
@@ -82,7 +77,7 @@ body {
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  // flex-grow: 1;
+  flex-grow: 1;
   min-width: 330px;
 
   img {
@@ -151,34 +146,6 @@ body {
 }
 
 
-.o-my-apps {
-  // min-width: 500px;
-  width: auto;
-
-  &__list {
-    background-color: #e7ebee;
-    // border-top: 2px solid white;
-    display: inline-flex;
-    flex-flow: column nowrap;
-  }
-  &__item {
-    display: inline-flex;
-  }
-  
-  &__control {
-
-  }
-  
-  .c-app-item {
-    padding: 0px 0 0px 8px;
-
-    &:first-of-type {
-      // padding: 8px 10px 4px;
-    }
-  }
-
-}
-
 .-semi-trans {
   opacity: .5
 }
@@ -187,7 +154,10 @@ body {
   padding: 8px 10px!important;
   background: red;
 }
-  
+
+.-relative {
+  position: relative;
+}  
 
 .-dark-bg {
   @extend %trans;
