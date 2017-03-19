@@ -50,9 +50,10 @@ body {
 
     input {
       @extend %trans;
+      background-color: transparent;
       color: white;
       height: inherit;
-      background-color: transparent;
+      padding-left: 1rem;
       
       &:focus,
       &:hover{
