@@ -165,18 +165,20 @@ body {
     
   }
 }
-
+.o-top-app {
+  padding: 10px;
+  .c-app-item {
+    margin-bottom: 10px;
+  }
+}
 .o-flag {
   float: right;
-
-  &__icon {
-    margin-right: 10px;
-    
-    float: left;
-
-    width: 57px;
-    display: inline-block;
-  }
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  width: 30px;
+  height: 20px;
+  margin-right: 20px;
 }
 
 .-semi-trans {
@@ -218,4 +220,8 @@ body {
 .-responsive {
   width: 100%;
   height: auto;
+}
+
+.full-land {
+  height: calc(100vh - 90px);
 }

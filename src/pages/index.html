@@ -89,7 +89,8 @@ keyword-list:
 {{> l-header}}
 
 <div class="row expanded">
-    <div class="large-7 columns callout">
+  <div class="large-7 columns">
+    <div class="callout full-land">
     <span class="float-left">
       <h1><strong>Keyword Tracking</strong> for Spotify Music</h1>
       Click here to see <i class="icon-address-card" data-toggle="js-app-card"></i> app details
@@ -110,18 +111,19 @@ keyword-list:
 
     </span>
     <hr>
-      <canvas id="myChart" width="400px" height="200px"></canvas>
+      <canvas id="myChart" width="400" height="250"></canvas>
     </div>
-  <div class="large-2 column">
+  </div>
+  <div class="large-1 column">
     {{#each keyword-list}}
     <div class="c-keyword">
     <div class="c-keyword__indicator arrow-{{this.dir}}"></div>
       <div class="c-keyword__title">
          {{this.keyword}}
       </div>
-      <div class="c-keyword__sub">
+      <!--<div class="c-keyword__sub">
         <span>rank: {{this.rank}}</span>
-      </div>
+      </div>-->
     </div>
     {{/each}}
     <div class="c-keyword">
@@ -134,12 +136,143 @@ keyword-list:
   </div>
         
   
-  <div class="large-3 columns callout">
+  <div class="large-4 columns full-land">
+    <div class="callout full-land">
+
     <div class="o-flag">
-      <a class="o-flag__icon"><img class="-responsive" src="./assets/img/usa.png" alt=""></a>
-      <a class="dropdown button secondary arrow-only">
-        <span class="show-for-sr">Show menu</span>
-      </a>
+      <a class="o-flag__icon icon-sort-down"></a>
+      <img class="-responsive" src="./assets/img/usa.png" alt="">
     </div>
+      <h3>Top Apps for <span class="label secondary">Music</span></h3>
+      
+<div class="o-top-app">
+<!--{{#each top-app}}
+    <div class="c-app-item">
+      <div class="c-app-item__icon"><img src="{{this.artworkUrl60}}" alt="{{this.name}}"></div>
+      <div class="c-app-item__title">{{this.name}}
+        <div class="c-app-item__sub">{{this.genre}}</div>
+      </div>
+      <div class="c-app-item__type">
+        <span class="show-for-sr">from {{this.storename}}</span>
+        <span aria-hidden="true"><i class="icon-{{this.storetype}} -semi-trans"></i></span>
+      </div>
+      <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+    </div>
+{{/each}}-->
+<div class="o-top-app">
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is3.mzstatic.com/image/thumb/Purple122/v4/0d/0b/3d/0d0b3d67-5404-a01b-1859-adf13900973f/source/60x60bb.jpg" alt="Musi - Unlimited Music For YouTube"></div>
+          <div class="c-app-item__title">Musi - Unlimited Music For YouTube
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple62/v4/17/d1/63/17d163d4-ab66-b7c9-67dc-b00df45a507e/source/60x60bb.jpg" alt="iMusic - Free Mp3 Music Streamer"></div>
+          <div class="c-app-item__title">iMusic - Free Mp3 Music Streamer
+            <div class="c-app-item__sub">Productivity</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is5.mzstatic.com/image/thumb/Purple111/v4/30/37/eb/3037eb67-34e7-d83f-37d5-73d6608fecb2/source/60x60bb.jpg" alt="Music Tube - Unlimited Songs Play.er &amp; Playlist"></div>
+          <div class="c-app-item__title">Music Tube - Unlimited Songs Play.er &amp; Playlist
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/7f/0c/bc/7f0cbc6d-3a30-a936-2687-c0edae4369ab/source/60x60bb.jpg" alt="Spotify: Listen To &amp; Stream Music for Free"></div>
+          <div class="c-app-item__title">Spotify: Listen To &amp; Stream Music for Free
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button class="button " type="button"><i class="icon-pencil"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is2.mzstatic.com/image/thumb/Purple111/v4/d8/89/09/d8890957-5310-1a35-51df-d914b223eacd/source/60x60bb.jpg" alt="Cloud Music - Offline Mp3 Music Audio Player"></div>
+          <div class="c-app-item__title">Cloud Music - Offline Mp3 Music Audio Player
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/9a/dc/30/9adc302f-35fd-bb2f-dbfa-8fc1607f49dd/source/60x60bb.jpg" alt="Trebel Music - Free Music Downloader"></div>
+          <div class="c-app-item__title">Trebel Music - Free Music Downloader
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple111/v4/9c/10/31/9c1031e2-ace4-5eef-f9b3-8d5276b10985/source/60x60bb.jpg" alt="SoundCloud - Music &amp; Audio"></div>
+          <div class="c-app-item__title">SoundCloud - Music &amp; Audio
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button class="button " type="button"><i class="icon-pencil"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is3.mzstatic.com/image/thumb/Purple71/v4/6c/b1/26/6cb1261f-e315-9281-b353-d860ff3f5b77/source/60x60bb.jpg" alt="Free Music - MP3 Streamer &amp; Playlist Manager Pro"></div>
+          <div class="c-app-item__title">Free Music - MP3 Streamer &amp; Playlist Manager Pro
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple111/v4/62/a9/bb/62a9bb07-f31a-9c30-fd53-521ecf91900b/source/60x60bb.jpg" alt="Pandora - Free Music &amp; Radio"></div>
+          <div class="c-app-item__title">Pandora - Free Music &amp; Radio
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button class="button " type="button"><i class="icon-pencil"></i></button>
+        </div>
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple62/v4/90/45/86/9045869a-0af5-b90c-18f8-8bf411bd77d5/source/60x60bb.jpg" alt="Free Music - for Youtube music video.s stream.ing player"></div>
+          <div class="c-app-item__title">Free Music - for Youtube music video.s stream.ing player
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    </div>
+</div>
+</div>
   </div>
 </div>  
+
