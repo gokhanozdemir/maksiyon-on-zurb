@@ -1,0 +1,62 @@
+[
+    {
+        "numberOfApps": 66196,
+        "combinationKeyword": false,
+        "searchVolume": 66,
+        "rank": 0,
+        "appTitleKeywordMatch": false,
+        "change": 0,
+        "pinned": false,
+        "keyword": "free",
+        "chance": 37,
+        "onITunes": false
+    },
+    {
+        "numberOfApps": 3380,
+        "combinationKeyword": false,
+        "searchVolume": 37,
+        "rank": 0,
+        "appTitleKeywordMatch": false,
+        "change": 0,
+        "pinned": false,
+        "keyword": "listen",
+        "chance": 40,
+        "onITunes": false
+    },
+    {
+        "numberOfApps": 106163,
+        "combinationKeyword": false,
+        "searchVolume": 79,
+        "rank": 4,
+        "appTitleKeywordMatch": true,
+        "change": 0,
+        "pinned": false,
+        "keyword": "music",
+        "chance": 23,
+        "onITunes": false
+    },
+    {
+        "numberOfApps": 2052,
+        "combinationKeyword": false,
+        "searchVolume": 50,
+        "rank": 7,
+        "appTitleKeywordMatch": false,
+        "change": -2,
+        "pinned": false,
+        "keyword": "playlist",
+        "chance": 40,
+        "onITunes": false
+    },
+    {
+        "numberOfApps": 20440,
+        "combinationKeyword": false,
+        "searchVolume": 49,
+        "rank": 4,
+        "appTitleKeywordMatch": false,
+        "change": 3,
+        "pinned": false,
+        "keyword": "song",
+        "chance": 40,
+        "onITunes": false
+    }
+]

@@ -1,0 +1,37 @@
+<div class="row expanded">
+  <div class="large-12 columns o-header">
+    <div class="c-app-item -relative -dark-bg" data-toggle="js-my-apps">
+      <div class="c-app-item__icon--header"><img src="{{app-info.icon}}" alt="{{app-info.name}}"></div>
+      <div class="c-app-item__title--header">{{app-info.name}}
+        <div class="c-app-item__sub--header">{{app-info.publisher}} | v{{app-info.versionHistory.[0].versionString}}</div>
+      </div>
+      <div class="c-app-item__type">
+        <span class="show-for-sr">from {{app-info.store}}</span>
+        <span aria-hidden="true"><i class="{{#ifequal app-info.store 'iTunes'}}icon-apple{{/ifequal}} -semi-trans"></i></span>
+      </div>
+      {{> pane-my-apps}}
+    </div>
+    <div class="o-header__actionbox">
+      <button class="button secondary" type="button" data-toggle="js-my-apps">
+        <span class="show-for-sr">App List</span>
+        <span aria-hidden="true"><i class="icon-th-list"></i></span>
+      </button>
+      <button class="button primary" type="button" data-toggle="js-app-card">
+        <span class="show-for-sr">App Details</span>
+        <span aria-hidden="true"><i class="icon-address-card icon-address-card"></i></span>
+      </button>
+      {{> btn-delete}}
+    </div>
+    {{> pane-appcard}}
+    <div class="o-header__quick-add" data-toggle="js-search">
+      <input type="text" id="search_input" placeholder="type here to track an app or add as competitor" />
+       {{> btn-search}}
+       {{> pane-search}}
+    </div>
+    <div class="o-header__user-pane">
+      <a class="button icon-cog"></a>
+      <a class="button icon-bookmark-1"></a>
+      <a class="button icon-user-circle"></a>
+    </div>
+  </div>
+</div> 

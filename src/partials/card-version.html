@@ -1,0 +1,28 @@
+<!--current app version show start-->
+<div class="row collapse o-version-tabs">
+  <div class="medium-3 columns -right">
+    <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+      <li class="tabs-title is-active hide"><a href="#tabv"> ver.<strong> {{ app-info.versionHistory.[0].versionString}}</strong></a></li>
+      {{#each app-info.versionHistory}}
+      <li class="tabs-title"><a href="#tab{{@index}}v"> ver.<strong> {{this.versionString}}</strong></a></li>
+      {{/each}}
+    </ul>
+    </div>
+    <div class="medium-9 columns">
+    <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+      <div class="tabs-panel is-active" id="tabv">
+          <div class="date"><i class="icon-calendar"></i> {{#todate}}{{app-info.versionHistory.[0].versionDate}}{{/todate}}</div>
+          <h4 class="subheader">{{app-info.versionHistory.[0].versionString}}</h3>
+          <p>{{app-info.versionHistory.[0].releaseNotes}}</p>
+        </div>
+      {{#each app-info.versionHistory}}
+        <div class="tabs-panel" id="tab{{@index}}v">
+          <div class="date"><i class="icon-calendar"></i> {{#todate}}{{this.versionDate}}{{/todate}}</div>
+          <h4 class="subheader">{{this.versionString}}</h3>
+          <p>{{this.releaseNotes}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+<!--current app version show end-->

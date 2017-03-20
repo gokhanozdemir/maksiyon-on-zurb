@@ -1,0 +1,24 @@
+<!--dropdown-panes-->
+<div class="dropdown-pane c-pane-apps" id="js-search" data-dropdown data-auto-focus="true">
+  <div class="c-pane-apps__list"> 
+  {{#each search}}
+  <!--start search row-->
+  <div class="c-pane-apps__item">
+    <div class="c-app-item -light-bg">
+      <div class="c-app-item__icon"><img src="{{this.img}}" alt="{{this.title}}"></div>
+      <div class="c-app-item__title">{{this.title}}
+        <div class="c-app-item__sub">{{this.info}}</div>
+      </div>
+      <div class="c-app-item__type">
+        <span class="show-for-sr">from {{this.storename}}</span>
+        <span aria-hidden="true"><i class="icon-{{this.storetype}} -semi-trans"></i></span>
+      </div>
+    </div>
+    <div class="c-pane-apps__control">
+      {{> btn-track}}
+      {{> btn-compete}}
+    </div>
+  </div>
+  {{/each}}
+</div>
+</div>

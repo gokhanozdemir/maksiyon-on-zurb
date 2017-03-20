@@ -1,0 +1,29 @@
+<!--modal-->
+<div class="reveal large" id="js-app-card" data-reveal>
+  
+  <div class="row o-appcard">
+    <div class="medium-9 column">
+      <h2 class="o-appcard__title"><img src="{{app-info.icon}}" alt=""> {{app-info.name}} <span class="-smaller">| {{app-info.publisher}} </span></h2>
+      <p>Category: {{app-info.category.name}} <span class="-smaller"> | {{app-info.category.id}}</span></p>
+      <p>Price: {{app-info.price}} and has in App Purchase</p>
+      <p>Rating: {{app-info.rating}}</p>
+      <h3>Description: </h3>
+      <p>{{app-info.description}}</p>
+      {{> card-version}}
+    </div>
+    <div class="medium-3 column">
+      <div class="o-appcard__slider">
+        {{> card-slider}}
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+

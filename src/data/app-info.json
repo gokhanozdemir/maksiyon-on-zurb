@@ -1,0 +1,331 @@
+{
+    "name": "Spotify Music",
+    "icon": "http://is4.mzstatic.com/image/thumb/Purple122/v4/7f/0c/bc/7f0cbc6d-3a30-a936-2687-c0edae4369ab/source/60x60bb.jpg",
+    "category": {
+        "name": "Music",
+        "id": 6011
+    },
+    "price": "Free",
+    "latestUpdate": 1489426604000,
+    "description": "Spotify is the best way to listen to music on mobile or tablet. \n\nSearch for any track, artist or album and listen for free. Make and share playlists. Build your biggest, best ever music collection. \n\nGet inspired with personal recommendations, and readymade playlists for just about everything.\n\nListen absolutely free with ads, or get Spotify Premium.\n\nF",
+    "publisher": "Spotify Ltd.",
+    "versionHistory": [
+        {
+            "versionString": "7.8.0",
+            "versionDate": 1488817478000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "7.7.0",
+            "versionDate": 1488227673000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "7.6.0",
+            "versionDate": 1487107034000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "7.5.0",
+            "versionDate": 1485810576000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "7.4.0",
+            "versionDate": 1485379019000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "6.8.0",
+            "versionDate": 1478106860000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "6.5.0",
+            "versionDate": 1474474386000,
+            "releaseNotes": "New: To all our friends who speak Czech. Now Spotify speaks your language. \n\nWe’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.7.0",
+            "versionDate": 1464276460000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.6.0",
+            "versionDate": 1463584733000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.5.1",
+            "versionDate": 1463079955000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.5.0",
+            "versionDate": 1461781960000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.4.0",
+            "versionDate": 1461007838000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.3.0",
+            "versionDate": 1459959416000,
+            "releaseNotes": "New: Meet our new typeface. It's called Circular and we hope you like it We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.2.0",
+            "versionDate": 1458679493000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.1.0",
+            "versionDate": 1457131664000,
+            "releaseNotes": "New: Use the LINE Messenger app to share the songs you love with the ones you love. We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "5.0.0",
+            "versionDate": 1456164152000,
+            "releaseNotes": "New: It's showtime! Spotify now features videos and podcasts to add to your music mix. Tap Shows in Browse to explore comedy, news, documentaries and more. (Currently available in US, UK, Germany and Sweden.)"
+        },
+        {
+            "versionString": "4.9.0",
+            "versionDate": 1455129891000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.8.0",
+            "versionDate": 1453921755000,
+            "releaseNotes": "New: Check out our new Party feature. You'll find it in Browse under \"Genres & Moods\".\nNew: Hello runners. We've moved the Running feature from the sidebar to \"Genres & Moods\" in Browse.\nNew: Introducing Behind the Lyrics - a new kind of playlist that lets you go deeper into lyrics and discover the stories behind the songs. Curated by Spotify & Genius.\nFictitious: This app is your father.\n\nWe’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.7.0",
+            "versionDate": 1452757477000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.6.0",
+            "versionDate": 1450134762000,
+            "releaseNotes": "NEW: Throwing a party over the holidays? Party on Spotify features beautifully mixed playlists you can tune and control. Sound like a hero at your next party! We’ve given the nav a tidy up. Hit the icons for settings and activity. We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.5.0",
+            "versionDate": 1449514648000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.4.0",
+            "versionDate": 1448302633000,
+            "releaseNotes": "Fixed: No more pesky crashing on the iPad Pro. Fictitious: This app is now available in three new fruit flavours. (Berry Surprise is still quite buggy.) PS: We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.3.0",
+            "versionDate": 1446573664000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.2.0",
+            "versionDate": 1445358252000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.1.0",
+            "versionDate": 1444666936000,
+            "releaseNotes": "New: It's finally here, folks. Play Spotify on your home speakers and TV with the new Google Chromecast. Rolling out to existing Chromecasts soon. We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "4.0.0",
+            "versionDate": 1443121916000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "3.9.0",
+            "versionDate": 1442254168000,
+            "releaseNotes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on."
+        },
+        {
+            "versionString": "3.8.0",
+            "versionDate": 1441029782000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "3.7.0",
+            "versionDate": 1439220058000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "3.6.0",
+            "versionDate": 1438095082000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "3.5.0",
+            "versionDate": 1436889524000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "3.4.0",
+            "versionDate": 1435603188000,
+            "releaseNotes": "Spotify Running gives you a non-stop mix of music you love - all perfectly in time with your run."
+        },
+        {
+            "versionString": "3.3.0",
+            "versionDate": 1434377638000,
+            "releaseNotes": "Minor improvements"
+        },
+        {
+            "versionString": "3.2.0",
+            "versionDate": 1433431991000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "3.1.0",
+            "versionDate": 1432152059000,
+            "releaseNotes": "New: Stay safe with our new 1Password integration, which lets you use strong secure passwords – without the hassle of having to remember them. Fixed: Issue when connecting to BMW ConnectedDrive and MINI Connected vehicles."
+        },
+        {
+            "versionString": "3.0.0",
+            "versionDate": 1430235847000,
+            "releaseNotes": "The new Spotify genre experience is now available on iPad. Update: We're aware of an issue when connecting to BMW ConnectedDrive and MINI Connected vehicles. A fix is coming soon."
+        },
+        {
+            "versionString": "2.9.0",
+            "versionDate": 1429547275000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "2.8.0",
+            "versionDate": 1428419056000,
+            "releaseNotes": "Improved: Re-introducing Spotify genres! In addition to playlists, you can now find artists, albums and concerts updated daily. (iPhone) Improved: Want to go back to the playlist you're playing? Just tap the title in the Now Playing view. (iPhone) Fictitious: This app is a gas at room temperature."
+        },
+        {
+            "versionString": "2.7.0",
+            "versionDate": 1427125922000,
+            "releaseNotes": "Now with revamped daily charts."
+        },
+        {
+            "versionString": "2.6.0",
+            "versionDate": 1426168953000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "2.5.0",
+            "versionDate": 1424990952000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "2.4.0",
+            "versionDate": 1423592046000,
+            "releaseNotes": "Minor improvements."
+        },
+        {
+            "versionString": "2.3.0",
+            "versionDate": 1422376308000,
+            "releaseNotes": "New: Hear a sneak peek with Touch Preview – just hold down your finger. Try it next time you're looking for the perfect playlist. New: Swipe left to save your favourite songs. Start building a collection in seconds."
+        },
+        {
+            "versionString": "2.2.0",
+            "versionDate": 1418324180000,
+            "releaseNotes": "New: Spotify now looks so much better on the big screen on your shiny new iPhone 6 Plus New: What are the people you follow listening to right now? Check out Top Tracks In Your Network. You'll find the playlist in Browse. (Rolling out to all users soon!)"
+        },
+        {
+            "versionString": "2.1.0",
+            "versionDate": 1418060539000,
+            "releaseNotes": "New: Ever find yourself wondering what to play on Spotify? Introducing the Discover experience on iPad."
+        },
+        {
+            "versionString": "2.0.0",
+            "versionDate": 1415729438000,
+            "releaseNotes": "New: We’re friends with BMW ConnectedDrive and MINI Connected vehicles. Connect your iOS device by USB to find Your Music, Browse and Radio in your car’s Multimedia menu."
+        },
+        {
+            "versionString": "1.9.0",
+            "versionDate": 1414691314000,
+            "releaseNotes": "New: Our new look is now on iPad. Hope you like black! New: Your Music is on iPad. Fictitious: This app can now speak cat, dog and horse."
+        },
+        {
+            "versionString": "1.8.1",
+            "versionDate": 1413817367000,
+            "releaseNotes": "New: Now supports Apple CarPlay! Play Spotify in your CarPlay equipped vehicle. Just connect a compatible iPhone. New: Spotify can now speak Swedish, and Québécois on iOS 8. Fixed: Various new bugs on iOS 8."
+        },
+        {
+            "versionString": "1.8.0",
+            "versionDate": 1412259634000,
+            "releaseNotes": "New: Now supports Apple CarPlay! Play Spotify in your CarPlay equipped vehicle. Just connect a compatible iPhone. New: Spotify can now speak Swedish, and Québécois on iOS 8. Fixed: Various new bugs on iOS 8."
+        },
+        {
+            "versionString": "1.7.1",
+            "versionDate": 1411052286000,
+            "releaseNotes": "New: While you're viewing an album on iPhone, check out more releases from the artist in one tap. New: Now you can enjoy Your Music, Browse and Radio on Ford SYNC AppLink. And see those preset numbers on your dashboard? Use them to store your favourite playlists, albums and artists. Fictitious: This app is growing a really fancy beard."
+        },
+        {
+            "versionString": "1.7.0",
+            "versionDate": 1410362256000,
+            "releaseNotes": "New: While you're viewing an album on iPhone, check out more releases from the artist in one tap. New: Now you can enjoy Your Music, Browse and Radio on Ford SYNC AppLink. And see those preset numbers on your dashboard? Use them to store your favourite playlists, albums and artists. Fictitious: This app is growing a really fancy beard."
+        },
+        {
+            "versionString": "1.6.0",
+            "versionDate": 1408994396000,
+            "releaseNotes": "New: Save whole albums to Your Music directly from the album page. Check out release year and total play time by swiping the album header. New: Spotify now speaks Finnish. Fictitious: This app was designed by David Hasselhoff."
+        },
+        {
+            "versionString": "1.5.0",
+            "versionDate": 1406649745000,
+            "releaseNotes": "New: Want an equalizer? OK, it's waiting for you in Settings. Go play. \nNew: Looking for Discover? You'll now find it inside Browse. (iPhone)\nNew: We've redesigned the Artist page for iPad, now with latest release and merchandise.\nFictitious: This app will swap any sticker for Messi."
+        }
+    ],
+    "store": "iTunes",
+    "screenshots": [
+        "http://a2.mzstatic.com/us/r30/Purple20/v4/d4/22/40/d42240b3-32c1-944f-c5e3-1126e65f25b2/screen696x696.jpeg",
+        "http://a5.mzstatic.com/us/r30/Purple30/v4/01/ef/64/01ef6462-1342-fcb9-f90e-cc7749f61966/screen696x696.jpeg",
+        "http://a1.mzstatic.com/us/r30/Purple20/v4/3f/3e/6b/3f3e6bf4-2c98-f191-64b7-6544d91da7f6/screen696x696.jpeg",
+        "http://a1.mzstatic.com/us/r30/Purple20/v4/12/77/21/12772175-dad9-0f8a-3e0d-723e0401ef7d/screen696x696.jpeg",
+        "http://a3.mzstatic.com/us/r30/Purple30/v4/1d/76/58/1d76589b-3f6f-2fa2-eb43-53f0866b66d1/screen696x696.jpeg"
+    ],
+    "hasInAppPurchases": true,
+    "rating": 4.5,
+    "isValid": true,
+    "countryList": [
+        "NL",
+        "TW",
+        "AR",
+        "CL",
+        "CZ",
+        "EC",
+        "PE",
+        "ID",
+        "FR",
+        "BE",
+        "HK",
+        "PT",
+        "FI",
+        "AU",
+        "AT",
+        "CA",
+        "NZ",
+        "SG",
+        "US",
+        "MY",
+        "BR",
+        "PL",
+        "CH",
+        "GR",
+        "CO",
+        "IT",
+        "NO",
+        "IE",
+        "DO",
+        "EE",
+        "TR",
+        "GB",
+        "MX",
+        "DE",
+        "ES",
+        "PH",
+        "JP",
+        "SE",
+        "DK"
+    ]
+}
