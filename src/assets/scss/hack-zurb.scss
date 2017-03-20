@@ -21,3 +21,10 @@ button,
 .orbit-container {
   min-height: 460px;
 }
+
+.button.primary {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}

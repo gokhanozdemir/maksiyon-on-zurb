@@ -30,23 +30,43 @@ search:
 {{> l-header}}
 
 <div class="row expanded">
-  <div class="large-7 columns">
-    <div class="callout">
+    <div class="large-7 columns callout">
     <span class="float-left">
       <h1><strong>Keyword Tracking</strong> for Spotify Music</h1>
       Click here to see <i class="icon-trash"></i> app details
     </span>
     <span class="float-right">
-      Keyword Ranking History for: <br> <span class="label secondary"><h3>Music</h3></span>
+      Keyword Ranking History for: <br> 
+      <span class="label secondary">
+        <h3>Music</h3>
+      </span>
+      
+    <!--<label>
+      <select>
+        {{#each app-info.countryList}}
+        <option value="{{this}}">{{this}} {{@index}}</option>
+        {{/each}}
+      </select>
+    </label>-->
+
     </span>
     <hr>
       <canvas id="myChart" width="400px" height="200px"></canvas>
     </div>
+  <div class="large-1 columns">
+    {{#each keywords}}
+    <div class="c-keyword">
+      {{this.keyword}}
+    </div>
+    {{/each}}
   </div>
-  <div class="large-1 columns">s</div>
-  <div class="large-4 columns">
-    <div class="callout">
-     gfds d
+  
+  <div class="large-4 columns callout">
+    <div class="o-flag">
+      <a class="o-flag__icon"><img class="-responsive" src="./assets/img/usa.png" alt=""></a>
+      <a class="dropdown button secondary arrow-only">
+        <span class="show-for-sr">Show menu</span>
+      </a>
     </div>
   </div>
 </div>  

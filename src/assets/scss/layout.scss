@@ -166,6 +166,19 @@ body {
   }
 }
 
+.o-flag {
+  float: right;
+
+  &__icon {
+    margin-right: 10px;
+    
+    float: left;
+
+    width: 57px;
+    display: inline-block;
+  }
+}
+
 .-semi-trans {
   opacity: .5
 }
@@ -202,3 +215,7 @@ body {
   transform: translate3d(-2px, -4px, 0)
 }
 
+.-responsive {
+  width: 100%;
+  height: auto;
+}
