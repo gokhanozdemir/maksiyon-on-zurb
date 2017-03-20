@@ -1,0 +1,960 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+    <title>M-Aksion!</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+
+    <div class="row expanded">
+      <div class="large-12 columns o-header">
+        <div class="c-app-item -relative -dark-bg" data-toggle="js-my-apps">
+          <div class="c-app-item__icon--header"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/7f/0c/bc/7f0cbc6d-3a30-a936-2687-c0edae4369ab/source/60x60bb.jpg" alt="Spotify Music"></div>
+          <div class="c-app-item__title--header">Spotify Music
+            <div class="c-app-item__sub--header">Spotify Ltd. | v7.8.0</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from iTunes</span>
+            <span aria-hidden="true"><i class="icon-apple -semi-trans"></i></span>
+          </div>
+          <!--dropdown-panes-->
+          <div class="dropdown-pane c-pane-apps" id="js-my-apps" data-dropdown data-auto-focus="true">
+            <form class="c-add-app">
+              <div class="c-3ple-line">
+                <div class="c-3ple-line__start -semi-trans"><i class="icon-th-thumb"></i></div>
+                <div class="c-3ple-line__center"><input class="" type="text" placeholder="Filter you apps"></div>
+                <div class="c-3ple-line__end">
+                  <button class="button" type="button">
+                    <span class="show-for-sr">Search App</span>
+                    <span aria-hidden="true"><i class="icon-search"></i></span>
+                  </button>
+                  </div>
+              </div>
+            </form>
+            <div class="c-pane-apps__list">
+              <!--start row-->
+              <div class="c-pane-apps__item">
+                <div class="c-app-item -light-bg">
+                <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/7f/0c/bc/7f0cbc6d-3a30-a936-2687-c0edae4369ab/source/60x60bb.jpg" alt="Spotify Music"></div>
+                <div class="c-app-item__title">Spotify Music
+                  <div class="c-app-item__sub">Listen To &amp; Stream Music for Free | Spotify Ltd.</div>
+                </div>
+                <div class="c-app-item__type">
+                  <span class="show-for-sr">from Apple AppStore</span>
+                  <span aria-hidden="true"><i class="icon-apple -semi-trans"></i></span>
+                </div>
+              </div>
+              <div class="c-pane-apps__control">
+                <!--start Edit btn-->
+                <button class="button secondary" type="button">
+                  <span class="show-for-sr">Edit App</span>
+                  <span aria-hidden="true"><i class="icon-pencil"></i></span>
+                </button>
+                <!--start delete btn-->
+                <button class="button alert" type="button">
+                  <span class="show-for-sr">Delete App</span>
+                  <span aria-hidden="true"><i class="icon-trash-empty"></i></span>
+                </button>
+              </div>
+            </div>
+              
+            <!--start row-->
+            <div class="c-pane-apps__item">
+              <div class="c-app-item -light-bg">
+                <div class="c-app-item__icon"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/ab/59/6e/ab596ed3-f57d-0a26-a304-06f7d61daa2a/source/170x170bb.png" alt="Tinder"></div>
+                <div class="c-app-item__title">Tinder
+                  <div class="c-app-item__sub">Tinder Inc.</div>
+                </div>
+                <div class="c-app-item__type">
+                  <span class="show-for-sr">from Google Playstore</span>
+                  <span aria-hidden="true"><i class="icon-android -semi-trans"></i></span>
+                </div>
+              </div>
+              <div class="c-pane-apps__control">
+                <!--start Edit btn-->
+                <button class="button secondary" type="button">
+                  <span class="show-for-sr">Edit App</span>
+                  <span aria-hidden="true"><i class="icon-pencil"></i></span>
+                </button>
+                <!--start delete btn-->
+                <button class="button alert" type="button">
+                  <span class="show-for-sr">Delete App</span>
+                  <span aria-hidden="true"><i class="icon-trash-empty"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="o-header__actionbox">
+          <button class="button secondary" type="button" data-toggle="js-my-apps">
+            <span class="show-for-sr">App List</span>
+            <span aria-hidden="true"><i class="icon-th-list"></i></span>
+          </button>
+          <button class="button primary" type="button" data-toggle="js-app-card">
+            <span class="show-for-sr">App Details</span>
+            <span aria-hidden="true"><i class="icon-address-card icon-address-card"></i></span>
+          </button>
+          <!--start delete btn-->
+          <button class="button alert" type="button">
+            <span class="show-for-sr">Delete App</span>
+            <span aria-hidden="true"><i class="icon-trash-empty"></i></span>
+          </button>
+        </div>
+        <!--modal-->
+        <div class="reveal large" id="js-app-card" data-reveal>
+          
+          <div class="row o-appcard">
+            <div class="medium-9 column">
+              <h2 class="o-appcard__title"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/7f/0c/bc/7f0cbc6d-3a30-a936-2687-c0edae4369ab/source/60x60bb.jpg" alt=""> Spotify Music <span class="-smaller">| Spotify Ltd. </span></h2>
+              <p>Category: Music <span class="-smaller"> | 6011</span></p>
+              <p>Price: Free and has in App Purchase</p>
+              <p>Rating: 4.5</p>
+              <h3>Description: </h3>
+              <p>Spotify is the best way to listen to music on mobile or tablet. 
+        
+        Search for any track, artist or album and listen for free. Make and share playlists. Build your biggest, best ever music collection. 
+        
+        Get inspired with personal recommendations, and readymade playlists for just about everything.
+        
+        Listen absolutely free with ads, or get Spotify Premium.
+        
+        F</p>
+              <!--current app version show start-->
+              <div class="row collapse o-version-tabs">
+                <div class="medium-3 columns -right">
+                  <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+                    <li class="tabs-title is-active hide"><a href="#tabv"> ver.<strong> 7.8.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab0v"> ver.<strong> 7.8.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab1v"> ver.<strong> 7.7.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab2v"> ver.<strong> 7.6.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab3v"> ver.<strong> 7.5.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab4v"> ver.<strong> 7.4.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab5v"> ver.<strong> 6.8.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab6v"> ver.<strong> 6.5.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab7v"> ver.<strong> 5.7.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab8v"> ver.<strong> 5.6.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab9v"> ver.<strong> 5.5.1</strong></a></li>
+                    <li class="tabs-title"><a href="#tab10v"> ver.<strong> 5.5.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab11v"> ver.<strong> 5.4.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab12v"> ver.<strong> 5.3.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab13v"> ver.<strong> 5.2.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab14v"> ver.<strong> 5.1.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab15v"> ver.<strong> 5.0.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab16v"> ver.<strong> 4.9.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab17v"> ver.<strong> 4.8.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab18v"> ver.<strong> 4.7.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab19v"> ver.<strong> 4.6.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab20v"> ver.<strong> 4.5.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab21v"> ver.<strong> 4.4.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab22v"> ver.<strong> 4.3.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab23v"> ver.<strong> 4.2.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab24v"> ver.<strong> 4.1.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab25v"> ver.<strong> 4.0.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab26v"> ver.<strong> 3.9.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab27v"> ver.<strong> 3.8.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab28v"> ver.<strong> 3.7.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab29v"> ver.<strong> 3.6.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab30v"> ver.<strong> 3.5.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab31v"> ver.<strong> 3.4.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab32v"> ver.<strong> 3.3.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab33v"> ver.<strong> 3.2.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab34v"> ver.<strong> 3.1.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab35v"> ver.<strong> 3.0.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab36v"> ver.<strong> 2.9.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab37v"> ver.<strong> 2.8.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab38v"> ver.<strong> 2.7.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab39v"> ver.<strong> 2.6.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab40v"> ver.<strong> 2.5.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab41v"> ver.<strong> 2.4.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab42v"> ver.<strong> 2.3.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab43v"> ver.<strong> 2.2.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab44v"> ver.<strong> 2.1.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab45v"> ver.<strong> 2.0.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab46v"> ver.<strong> 1.9.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab47v"> ver.<strong> 1.8.1</strong></a></li>
+                    <li class="tabs-title"><a href="#tab48v"> ver.<strong> 1.8.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab49v"> ver.<strong> 1.7.1</strong></a></li>
+                    <li class="tabs-title"><a href="#tab50v"> ver.<strong> 1.7.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab51v"> ver.<strong> 1.6.0</strong></a></li>
+                    <li class="tabs-title"><a href="#tab52v"> ver.<strong> 1.5.0</strong></a></li>
+                  </ul>
+                  </div>
+                  <div class="medium-9 columns">
+                  <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+                    <div class="tabs-panel is-active" id="tabv">
+                        <div class="date"><i class="icon-calendar"></i> Mon Mar 06 2017</div>
+                        <h4 class="subheader">7.8.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab0v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Mar 06 2017</div>
+                        <h4 class="subheader">7.8.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab1v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Feb 27 2017</div>
+                        <h4 class="subheader">7.7.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab2v">
+                        <div class="date"><i class="icon-calendar"></i> Wed Feb 15 2017</div>
+                        <h4 class="subheader">7.6.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab3v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Jan 31 2017</div>
+                        <h4 class="subheader">7.5.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab4v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Jan 26 2017</div>
+                        <h4 class="subheader">7.4.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab5v">
+                        <div class="date"><i class="icon-calendar"></i> Wed Nov 02 2016</div>
+                        <h4 class="subheader">6.8.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab6v">
+                        <div class="date"><i class="icon-calendar"></i> Wed Sep 21 2016</div>
+                        <h4 class="subheader">6.5.0</h3>
+                        <p>New: To all our friends who speak Czech. Now Spotify speaks your language. 
+              
+              We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab7v">
+                        <div class="date"><i class="icon-calendar"></i> Thu May 26 2016</div>
+                        <h4 class="subheader">5.7.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab8v">
+                        <div class="date"><i class="icon-calendar"></i> Wed May 18 2016</div>
+                        <h4 class="subheader">5.6.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab9v">
+                        <div class="date"><i class="icon-calendar"></i> Thu May 12 2016</div>
+                        <h4 class="subheader">5.5.1</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab10v">
+                        <div class="date"><i class="icon-calendar"></i> Wed Apr 27 2016</div>
+                        <h4 class="subheader">5.5.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab11v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Apr 18 2016</div>
+                        <h4 class="subheader">5.4.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab12v">
+                        <div class="date"><i class="icon-calendar"></i> Wed Apr 06 2016</div>
+                        <h4 class="subheader">5.3.0</h3>
+                        <p>New: Meet our new typeface. It&#x27;s called Circular and we hope you like it We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab13v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Mar 22 2016</div>
+                        <h4 class="subheader">5.2.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab14v">
+                        <div class="date"><i class="icon-calendar"></i> Sat Mar 05 2016</div>
+                        <h4 class="subheader">5.1.0</h3>
+                        <p>New: Use the LINE Messenger app to share the songs you love with the ones you love. We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab15v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Feb 22 2016</div>
+                        <h4 class="subheader">5.0.0</h3>
+                        <p>New: It&#x27;s showtime! Spotify now features videos and podcasts to add to your music mix. Tap Shows in Browse to explore comedy, news, documentaries and more. (Currently available in US, UK, Germany and Sweden.)</p>
+                      </div>
+                      <div class="tabs-panel" id="tab16v">
+                        <div class="date"><i class="icon-calendar"></i> Wed Feb 10 2016</div>
+                        <h4 class="subheader">4.9.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab17v">
+                        <div class="date"><i class="icon-calendar"></i> Wed Jan 27 2016</div>
+                        <h4 class="subheader">4.8.0</h3>
+                        <p>New: Check out our new Party feature. You&#x27;ll find it in Browse under &quot;Genres &amp; Moods&quot;.
+              New: Hello runners. We&#x27;ve moved the Running feature from the sidebar to &quot;Genres &amp; Moods&quot; in Browse.
+              New: Introducing Behind the Lyrics - a new kind of playlist that lets you go deeper into lyrics and discover the stories behind the songs. Curated by Spotify &amp; Genius.
+              Fictitious: This app is your father.
+              
+              We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab18v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Jan 14 2016</div>
+                        <h4 class="subheader">4.7.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab19v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Dec 15 2015</div>
+                        <h4 class="subheader">4.6.0</h3>
+                        <p>NEW: Throwing a party over the holidays? Party on Spotify features beautifully mixed playlists you can tune and control. Sound like a hero at your next party! We’ve given the nav a tidy up. Hit the icons for settings and activity. We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab20v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Dec 07 2015</div>
+                        <h4 class="subheader">4.5.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab21v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Nov 23 2015</div>
+                        <h4 class="subheader">4.4.0</h3>
+                        <p>Fixed: No more pesky crashing on the iPad Pro. Fictitious: This app is now available in three new fruit flavours. (Berry Surprise is still quite buggy.) PS: We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab22v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Nov 03 2015</div>
+                        <h4 class="subheader">4.3.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab23v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Oct 20 2015</div>
+                        <h4 class="subheader">4.2.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab24v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Oct 12 2015</div>
+                        <h4 class="subheader">4.1.0</h3>
+                        <p>New: It&#x27;s finally here, folks. Play Spotify on your home speakers and TV with the new Google Chromecast. Rolling out to existing Chromecasts soon. We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab25v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Sep 24 2015</div>
+                        <h4 class="subheader">4.0.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab26v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Sep 14 2015</div>
+                        <h4 class="subheader">3.9.0</h3>
+                        <p>We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab27v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Aug 31 2015</div>
+                        <h4 class="subheader">3.8.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab28v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Aug 10 2015</div>
+                        <h4 class="subheader">3.7.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab29v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Jul 28 2015</div>
+                        <h4 class="subheader">3.6.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab30v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Jul 14 2015</div>
+                        <h4 class="subheader">3.5.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab31v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Jun 29 2015</div>
+                        <h4 class="subheader">3.4.0</h3>
+                        <p>Spotify Running gives you a non-stop mix of music you love - all perfectly in time with your run.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab32v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Jun 15 2015</div>
+                        <h4 class="subheader">3.3.0</h3>
+                        <p>Minor improvements</p>
+                      </div>
+                      <div class="tabs-panel" id="tab33v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Jun 04 2015</div>
+                        <h4 class="subheader">3.2.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab34v">
+                        <div class="date"><i class="icon-calendar"></i> Thu May 21 2015</div>
+                        <h4 class="subheader">3.1.0</h3>
+                        <p>New: Stay safe with our new 1Password integration, which lets you use strong secure passwords – without the hassle of having to remember them. Fixed: Issue when connecting to BMW ConnectedDrive and MINI Connected vehicles.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab35v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Apr 28 2015</div>
+                        <h4 class="subheader">3.0.0</h3>
+                        <p>The new Spotify genre experience is now available on iPad. Update: We&#x27;re aware of an issue when connecting to BMW ConnectedDrive and MINI Connected vehicles. A fix is coming soon.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab36v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Apr 20 2015</div>
+                        <h4 class="subheader">2.9.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab37v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Apr 07 2015</div>
+                        <h4 class="subheader">2.8.0</h3>
+                        <p>Improved: Re-introducing Spotify genres! In addition to playlists, you can now find artists, albums and concerts updated daily. (iPhone) Improved: Want to go back to the playlist you&#x27;re playing? Just tap the title in the Now Playing view. (iPhone) Fictitious: This app is a gas at room temperature.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab38v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Mar 23 2015</div>
+                        <h4 class="subheader">2.7.0</h3>
+                        <p>Now with revamped daily charts.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab39v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Mar 12 2015</div>
+                        <h4 class="subheader">2.6.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab40v">
+                        <div class="date"><i class="icon-calendar"></i> Fri Feb 27 2015</div>
+                        <h4 class="subheader">2.5.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab41v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Feb 10 2015</div>
+                        <h4 class="subheader">2.4.0</h3>
+                        <p>Minor improvements.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab42v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Jan 27 2015</div>
+                        <h4 class="subheader">2.3.0</h3>
+                        <p>New: Hear a sneak peek with Touch Preview – just hold down your finger. Try it next time you&#x27;re looking for the perfect playlist. New: Swipe left to save your favourite songs. Start building a collection in seconds.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab43v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Dec 11 2014</div>
+                        <h4 class="subheader">2.2.0</h3>
+                        <p>New: Spotify now looks so much better on the big screen on your shiny new iPhone 6 Plus New: What are the people you follow listening to right now? Check out Top Tracks In Your Network. You&#x27;ll find the playlist in Browse. (Rolling out to all users soon!)</p>
+                      </div>
+                      <div class="tabs-panel" id="tab44v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Dec 08 2014</div>
+                        <h4 class="subheader">2.1.0</h3>
+                        <p>New: Ever find yourself wondering what to play on Spotify? Introducing the Discover experience on iPad.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab45v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Nov 11 2014</div>
+                        <h4 class="subheader">2.0.0</h3>
+                        <p>New: We’re friends with BMW ConnectedDrive and MINI Connected vehicles. Connect your iOS device by USB to find Your Music, Browse and Radio in your car’s Multimedia menu.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab46v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Oct 30 2014</div>
+                        <h4 class="subheader">1.9.0</h3>
+                        <p>New: Our new look is now on iPad. Hope you like black! New: Your Music is on iPad. Fictitious: This app can now speak cat, dog and horse.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab47v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Oct 20 2014</div>
+                        <h4 class="subheader">1.8.1</h3>
+                        <p>New: Now supports Apple CarPlay! Play Spotify in your CarPlay equipped vehicle. Just connect a compatible iPhone. New: Spotify can now speak Swedish, and Québécois on iOS 8. Fixed: Various new bugs on iOS 8.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab48v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Oct 02 2014</div>
+                        <h4 class="subheader">1.8.0</h3>
+                        <p>New: Now supports Apple CarPlay! Play Spotify in your CarPlay equipped vehicle. Just connect a compatible iPhone. New: Spotify can now speak Swedish, and Québécois on iOS 8. Fixed: Various new bugs on iOS 8.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab49v">
+                        <div class="date"><i class="icon-calendar"></i> Thu Sep 18 2014</div>
+                        <h4 class="subheader">1.7.1</h3>
+                        <p>New: While you&#x27;re viewing an album on iPhone, check out more releases from the artist in one tap. New: Now you can enjoy Your Music, Browse and Radio on Ford SYNC AppLink. And see those preset numbers on your dashboard? Use them to store your favourite playlists, albums and artists. Fictitious: This app is growing a really fancy beard.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab50v">
+                        <div class="date"><i class="icon-calendar"></i> Wed Sep 10 2014</div>
+                        <h4 class="subheader">1.7.0</h3>
+                        <p>New: While you&#x27;re viewing an album on iPhone, check out more releases from the artist in one tap. New: Now you can enjoy Your Music, Browse and Radio on Ford SYNC AppLink. And see those preset numbers on your dashboard? Use them to store your favourite playlists, albums and artists. Fictitious: This app is growing a really fancy beard.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab51v">
+                        <div class="date"><i class="icon-calendar"></i> Mon Aug 25 2014</div>
+                        <h4 class="subheader">1.6.0</h3>
+                        <p>New: Save whole albums to Your Music directly from the album page. Check out release year and total play time by swiping the album header. New: Spotify now speaks Finnish. Fictitious: This app was designed by David Hasselhoff.</p>
+                      </div>
+                      <div class="tabs-panel" id="tab52v">
+                        <div class="date"><i class="icon-calendar"></i> Tue Jul 29 2014</div>
+                        <h4 class="subheader">1.5.0</h3>
+                        <p>New: Want an equalizer? OK, it&#x27;s waiting for you in Settings. Go play. 
+              New: Looking for Discover? You&#x27;ll now find it inside Browse. (iPhone)
+              New: We&#x27;ve redesigned the Artist page for iPad, now with latest release and merchandise.
+              Fictitious: This app will swap any sticker for Messi.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--current app version show end-->
+            </div>
+            <div class="medium-3 column">
+              <div class="o-appcard__slider">
+                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                  <ul class="orbit-container">
+                    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                      <li class="orbit-slide">
+                        <img class="orbit-image" src="http://a2.mzstatic.com/us/r30/Purple20/v4/d4/22/40/d42240b3-32c1-944f-c5e3-1126e65f25b2/screen696x696.jpeg">
+                      </li>
+                      <li class="orbit-slide">
+                        <img class="orbit-image" src="http://a5.mzstatic.com/us/r30/Purple30/v4/01/ef/64/01ef6462-1342-fcb9-f90e-cc7749f61966/screen696x696.jpeg">
+                      </li>
+                      <li class="orbit-slide">
+                        <img class="orbit-image" src="http://a1.mzstatic.com/us/r30/Purple20/v4/3f/3e/6b/3f3e6bf4-2c98-f191-64b7-6544d91da7f6/screen696x696.jpeg">
+                      </li>
+                      <li class="orbit-slide">
+                        <img class="orbit-image" src="http://a1.mzstatic.com/us/r30/Purple20/v4/12/77/21/12772175-dad9-0f8a-3e0d-723e0401ef7d/screen696x696.jpeg">
+                      </li>
+                      <li class="orbit-slide">
+                        <img class="orbit-image" src="http://a3.mzstatic.com/us/r30/Purple30/v4/1d/76/58/1d76589b-3f6f-2fa2-eb43-53f0866b66d1/screen696x696.jpeg">
+                      </li>
+                  </ul>
+                  <nav class="orbit-bullets">
+                      <button data-slide="0"></button>
+                      <button data-slide="1"></button>
+                      <button data-slide="2"></button>
+                      <button data-slide="3"></button>
+                      <button data-slide="4"></button>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        
+        
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        
+        
+        <div class="o-header__quick-add" data-toggle="js-search">
+          <input type="text" id="search_input" placeholder="type here to track an app or add as competitor" />
+           <button class="button" type="button">
+             <span class="show-for-sr">Search App</span>
+             <span aria-hidden="true"><i class="icon-search"></i></span>
+           </button>
+           <!--dropdown-panes-->
+           <div class="dropdown-pane c-pane-apps" id="js-search" data-dropdown data-auto-focus="true">
+             <div class="c-pane-apps__list"> 
+             <!--start search row-->
+             <div class="c-pane-apps__item">
+               <div class="c-app-item -light-bg">
+                 <div class="c-app-item__icon"><img src="https://insights.mobileaction.co/app-image?url&#x3D;http%3A%2F%2Fis3.mzstatic.com%2Fimage%2Fthumb%2FPurple20%2Fv4%2F15%2F7e%2Fd9%2F157ed9d9-0082-8fed-bed0-6bed211292ca%2Fsource%2F60x60bb.jpg" alt="Musicloud"></div>
+                 <div class="c-app-item__title">Musicloud
+                   <div class="c-app-item__sub">Music Player For Cloud Platforms</div>
+                 </div>
+                 <div class="c-app-item__type">
+                   <span class="show-for-sr">from Apple Appstore</span>
+                   <span aria-hidden="true"><i class="icon-apple -semi-trans"></i></span>
+                 </div>
+               </div>
+               <div class="c-pane-apps__control">
+                 <button class="button" type="button"><i class="icon-crown-plus"></i>Watch</button>
+                 <button class="button alert" type="button"><i class="icon-gaming"></i>Add as Competitor</button>
+               </div>
+             </div>
+             <!--start search row-->
+             <div class="c-pane-apps__item">
+               <div class="c-app-item -light-bg">
+                 <div class="c-app-item__icon"><img src="https://insights.mobileaction.co/app-image?url&#x3D;http%3A%2F%2Fis5.mzstatic.com%2Fimage%2Fthumb%2FPurple60%2Fv4%2F84%2F53%2F57%2F84535792-46ad-4acc-632e-03d5df575be2%2Fsource%2F60x60bb.jpg" alt="Music HD.ITube Player"></div>
+                 <div class="c-app-item__title">Music HD.ITube Player
+                   <div class="c-app-item__sub">Free Music Video Player &amp; Streamer for YouTube, SoundCloud</div>
+                 </div>
+                 <div class="c-app-item__type">
+                   <span class="show-for-sr">from Google Playstore</span>
+                   <span aria-hidden="true"><i class="icon-android -semi-trans"></i></span>
+                 </div>
+               </div>
+               <div class="c-pane-apps__control">
+                 <button class="button" type="button"><i class="icon-crown-plus"></i>Watch</button>
+                 <button class="button alert" type="button"><i class="icon-gaming"></i>Add as Competitor</button>
+               </div>
+             </div>
+             <!--start search row-->
+             <div class="c-pane-apps__item">
+               <div class="c-app-item -light-bg">
+                 <div class="c-app-item__icon"><img src="https://insights.mobileaction.co/app-image?url&#x3D;http%3A%2F%2Fis2.mzstatic.com%2Fimage%2Fthumb%2FPurple49%2Fv4%2F01%2Fd6%2F6d%2F01d66d3f-96b3-ebec-0dd1-8db0ecee174f%2Fsource%2F60x60bb.jpg" alt="musical.ly -"></div>
+                 <div class="c-app-item__title">musical.ly -
+                   <div class="c-app-item__sub">Your video community</div>
+                 </div>
+                 <div class="c-app-item__type">
+                   <span class="show-for-sr">from Apple Appstore</span>
+                   <span aria-hidden="true"><i class="icon-apple -semi-trans"></i></span>
+                 </div>
+               </div>
+               <div class="c-pane-apps__control">
+                 <button class="button" type="button"><i class="icon-crown-plus"></i>Watch</button>
+                 <button class="button alert" type="button"><i class="icon-gaming"></i>Add as Competitor</button>
+               </div>
+             </div>
+           </div>
+           </div>
+        </div>
+        <div class="o-header__user-pane">
+          <a class="button icon-cog"></a>
+          <a class="button icon-bookmark-1"></a>
+          <a class="button icon-user-circle"></a>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="row expanded">
+      <div class="large-7 columns">
+        <div class="callout full-land">
+        <span class="float-left">
+          <h1><strong>Keyword Tracking</strong> for Spotify Music</h1>
+          Click here to see <i class="icon-address-card" data-toggle="js-app-card"></i> app details
+        </span>
+        <span class="float-right">
+          Keyword Ranking History for: <br> 
+          <span class="label secondary">
+            <h3>Music</h3>
+          </span>
+          
+        <!--<label>
+          <select>
+            <option value="NL">NL 0</option>
+            <option value="TW">TW 1</option>
+            <option value="AR">AR 2</option>
+            <option value="CL">CL 3</option>
+            <option value="CZ">CZ 4</option>
+            <option value="EC">EC 5</option>
+            <option value="PE">PE 6</option>
+            <option value="ID">ID 7</option>
+            <option value="FR">FR 8</option>
+            <option value="BE">BE 9</option>
+            <option value="HK">HK 10</option>
+            <option value="PT">PT 11</option>
+            <option value="FI">FI 12</option>
+            <option value="AU">AU 13</option>
+            <option value="AT">AT 14</option>
+            <option value="CA">CA 15</option>
+            <option value="NZ">NZ 16</option>
+            <option value="SG">SG 17</option>
+            <option value="US">US 18</option>
+            <option value="MY">MY 19</option>
+            <option value="BR">BR 20</option>
+            <option value="PL">PL 21</option>
+            <option value="CH">CH 22</option>
+            <option value="GR">GR 23</option>
+            <option value="CO">CO 24</option>
+            <option value="IT">IT 25</option>
+            <option value="NO">NO 26</option>
+            <option value="IE">IE 27</option>
+            <option value="DO">DO 28</option>
+            <option value="EE">EE 29</option>
+            <option value="TR">TR 30</option>
+            <option value="GB">GB 31</option>
+            <option value="MX">MX 32</option>
+            <option value="DE">DE 33</option>
+            <option value="ES">ES 34</option>
+            <option value="PH">PH 35</option>
+            <option value="JP">JP 36</option>
+            <option value="SE">SE 37</option>
+            <option value="DK">DK 38</option>
+          </select>
+        </label>-->
+    
+        </span>
+        <hr>
+          <canvas id="myChart" width="400" height="250"></canvas>
+        </div>
+      </div>
+      <div class="large-1 column">
+        <div class="c-keyword">
+        <div class="c-keyword__indicator arrow-none"></div>
+          <div class="c-keyword__title">
+             free
+          </div>
+          <!--<div class="c-keyword__sub">
+            <span>rank: 0</span>
+          </div>-->
+        </div>
+        <div class="c-keyword">
+        <div class="c-keyword__indicator arrow-none"></div>
+          <div class="c-keyword__title">
+             listen
+          </div>
+          <!--<div class="c-keyword__sub">
+            <span>rank: 0</span>
+          </div>-->
+        </div>
+        <div class="c-keyword">
+        <div class="c-keyword__indicator arrow-none"></div>
+          <div class="c-keyword__title">
+             music
+          </div>
+          <!--<div class="c-keyword__sub">
+            <span>rank: 4</span>
+          </div>-->
+        </div>
+        <div class="c-keyword">
+        <div class="c-keyword__indicator arrow-down"></div>
+          <div class="c-keyword__title">
+             playlist
+          </div>
+          <!--<div class="c-keyword__sub">
+            <span>rank: 7</span>
+          </div>-->
+        </div>
+        <div class="c-keyword">
+        <div class="c-keyword__indicator arrow-up"></div>
+          <div class="c-keyword__title">
+             song
+          </div>
+          <!--<div class="c-keyword__sub">
+            <span>rank: 4</span>
+          </div>-->
+        </div>
+        <div class="c-keyword">
+            <!--start Add btn-->
+            <button class="button green c-keyword__add" type="button">
+              <!--<span class="show-for-sr">Delete App</span>-->
+             <i class="icon-plus-squared"></i> ADD
+            </button>
+        </div>
+      </div>
+            
+      
+      <div class="large-4 columns full-land">
+        <div class="callout full-land">
+    
+        <div class="o-flag">
+          <a class="o-flag__icon icon-sort-down"></a>
+          <img class="-responsive" src="./assets/img/usa.png" alt="">
+        </div>
+          <h3>Top Apps for <span class="label secondary">Music</span></h3>
+          
+    <div class="o-top-app">
+    <!--
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is3.mzstatic.com/image/thumb/Purple122/v4/0d/0b/3d/0d0b3d67-5404-a01b-1859-adf13900973f/source/60x60bb.jpg" alt="Musi - Unlimited Music For YouTube"></div>
+          <div class="c-app-item__title">Musi - Unlimited Music For YouTube
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple62/v4/17/d1/63/17d163d4-ab66-b7c9-67dc-b00df45a507e/source/60x60bb.jpg" alt="iMusic - Free Mp3 Music Streamer"></div>
+          <div class="c-app-item__title">iMusic - Free Mp3 Music Streamer
+            <div class="c-app-item__sub">Productivity</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is5.mzstatic.com/image/thumb/Purple111/v4/30/37/eb/3037eb67-34e7-d83f-37d5-73d6608fecb2/source/60x60bb.jpg" alt="Music Tube - Unlimited Songs Play.er &amp; Playlist"></div>
+          <div class="c-app-item__title">Music Tube - Unlimited Songs Play.er &amp; Playlist
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/7f/0c/bc/7f0cbc6d-3a30-a936-2687-c0edae4369ab/source/60x60bb.jpg" alt="Spotify: Listen To &amp; Stream Music for Free"></div>
+          <div class="c-app-item__title">Spotify: Listen To &amp; Stream Music for Free
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is2.mzstatic.com/image/thumb/Purple111/v4/d8/89/09/d8890957-5310-1a35-51df-d914b223eacd/source/60x60bb.jpg" alt="Cloud Music - Offline Mp3 Music Audio Player"></div>
+          <div class="c-app-item__title">Cloud Music - Offline Mp3 Music Audio Player
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/9a/dc/30/9adc302f-35fd-bb2f-dbfa-8fc1607f49dd/source/60x60bb.jpg" alt="Trebel Music - Free Music Downloader"></div>
+          <div class="c-app-item__title">Trebel Music - Free Music Downloader
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple111/v4/9c/10/31/9c1031e2-ace4-5eef-f9b3-8d5276b10985/source/60x60bb.jpg" alt="SoundCloud - Music &amp; Audio"></div>
+          <div class="c-app-item__title">SoundCloud - Music &amp; Audio
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is3.mzstatic.com/image/thumb/Purple71/v4/6c/b1/26/6cb1261f-e315-9281-b353-d860ff3f5b77/source/60x60bb.jpg" alt="Free Music - MP3 Streamer &amp; Playlist Manager Pro"></div>
+          <div class="c-app-item__title">Free Music - MP3 Streamer &amp; Playlist Manager Pro
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple111/v4/62/a9/bb/62a9bb07-f31a-9c30-fd53-521ecf91900b/source/60x60bb.jpg" alt="Pandora - Free Music &amp; Radio"></div>
+          <div class="c-app-item__title">Pandora - Free Music &amp; Radio
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    
+        <div class="c-app-item">
+          <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple62/v4/90/45/86/9045869a-0af5-b90c-18f8-8bf411bd77d5/source/60x60bb.jpg" alt="Free Music - for Youtube music video.s stream.ing player"></div>
+          <div class="c-app-item__title">Free Music - for Youtube music video.s stream.ing player
+            <div class="c-app-item__sub">Music</div>
+          </div>
+          <div class="c-app-item__type">
+            <span class="show-for-sr">from </span>
+            <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+          </div>
+          <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+        </div>
+    -->
+    <div class="o-top-app">
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is3.mzstatic.com/image/thumb/Purple122/v4/0d/0b/3d/0d0b3d67-5404-a01b-1859-adf13900973f/source/60x60bb.jpg" alt="Musi - Unlimited Music For YouTube"></div>
+              <div class="c-app-item__title">Musi - Unlimited Music For YouTube
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple62/v4/17/d1/63/17d163d4-ab66-b7c9-67dc-b00df45a507e/source/60x60bb.jpg" alt="iMusic - Free Mp3 Music Streamer"></div>
+              <div class="c-app-item__title">iMusic - Free Mp3 Music Streamer
+                <div class="c-app-item__sub">Productivity</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is5.mzstatic.com/image/thumb/Purple111/v4/30/37/eb/3037eb67-34e7-d83f-37d5-73d6608fecb2/source/60x60bb.jpg" alt="Music Tube - Unlimited Songs Play.er &amp; Playlist"></div>
+              <div class="c-app-item__title">Music Tube - Unlimited Songs Play.er &amp; Playlist
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/7f/0c/bc/7f0cbc6d-3a30-a936-2687-c0edae4369ab/source/60x60bb.jpg" alt="Spotify: Listen To &amp; Stream Music for Free"></div>
+              <div class="c-app-item__title">Spotify: Listen To &amp; Stream Music for Free
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button class="button " type="button"><i class="icon-pencil"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is2.mzstatic.com/image/thumb/Purple111/v4/d8/89/09/d8890957-5310-1a35-51df-d914b223eacd/source/60x60bb.jpg" alt="Cloud Music - Offline Mp3 Music Audio Player"></div>
+              <div class="c-app-item__title">Cloud Music - Offline Mp3 Music Audio Player
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple122/v4/9a/dc/30/9adc302f-35fd-bb2f-dbfa-8fc1607f49dd/source/60x60bb.jpg" alt="Trebel Music - Free Music Downloader"></div>
+              <div class="c-app-item__title">Trebel Music - Free Music Downloader
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple111/v4/9c/10/31/9c1031e2-ace4-5eef-f9b3-8d5276b10985/source/60x60bb.jpg" alt="SoundCloud - Music &amp; Audio"></div>
+              <div class="c-app-item__title">SoundCloud - Music &amp; Audio
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button class="button " type="button"><i class="icon-pencil"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is3.mzstatic.com/image/thumb/Purple71/v4/6c/b1/26/6cb1261f-e315-9281-b353-d860ff3f5b77/source/60x60bb.jpg" alt="Free Music - MP3 Streamer &amp; Playlist Manager Pro"></div>
+              <div class="c-app-item__title">Free Music - MP3 Streamer &amp; Playlist Manager Pro
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is1.mzstatic.com/image/thumb/Purple111/v4/62/a9/bb/62a9bb07-f31a-9c30-fd53-521ecf91900b/source/60x60bb.jpg" alt="Pandora - Free Music &amp; Radio"></div>
+              <div class="c-app-item__title">Pandora - Free Music &amp; Radio
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button class="button " type="button"><i class="icon-pencil"></i></button>
+            </div>
+            <div class="c-app-item">
+              <div class="c-app-item__icon"><img src="http://is4.mzstatic.com/image/thumb/Purple62/v4/90/45/86/9045869a-0af5-b90c-18f8-8bf411bd77d5/source/60x60bb.jpg" alt="Free Music - for Youtube music video.s stream.ing player"></div>
+              <div class="c-app-item__title">Free Music - for Youtube music video.s stream.ing player
+                <div class="c-app-item__sub">Music</div>
+              </div>
+              <div class="c-app-item__type">
+                <span class="show-for-sr">from </span>
+                <span aria-hidden="true"><i class="icon- -semi-trans"></i></span>
+              </div>
+              <button alt="Add as a competitor" class="button alert" type="button"><i class="icon-gaming"></i></button>
+            </div>
+        </div>
+    </div>
+    </div>
+      </div>
+    </div>  
+    
+    
+    
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
