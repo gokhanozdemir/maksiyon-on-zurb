@@ -1,35 +1,29 @@
-<!--dropdown-panes-->
-<div class="dropdown-pane o-pane-appcard" id="js-app-card" data-dropdown data-hover="true" data-hover-pane="true">
-
-  {{> card-version}}
-
-  {{> card-slider}}  
+<!--modal-->
+<div class="reveal large" id="js-app-card" data-reveal>
+  
+  <div class="row o-appcard">
+    <div class="medium-9 column">
+      <h2 class="o-appcard__title"><img src="{{app-info.icon}}" alt=""> {{app-info.name}} <span class="-smaller">| {{app-info.publisher}} </span></h2>
+      <p>Category: {{app-info.category.name}} <span class="-smaller"> | {{app-info.category.id}}</span></p>
+      <p>Price: {{app-info.price}} and has in App Purchase</p>
+      <p>Rating: {{app-info.rating}}</p>
+      <h3>Description: </h3>
+      <p>{{app-info.description}}</p>
+      {{> card-version}}
+    </div>
+    <div class="medium-3 column">
+      <div class="o-appcard__slider">
+        {{> card-slider}}
+      </div>
+    </div>
+  </div>
+  
   
 
-  {{app-info.name}} <br>
-  <img src="{{app-info.icon}}" alt=""> <br>
-  {{app-info.category.name}} <br>
-  {{app-info.category.id}} <br>
-  {{app-info.price}} <br>
-  {{app-info.latestUpdate}} <br>
-  {{app-info.description}} <br>
-  {{app-info.publisher}} <br>
-  <!-- <br>-->
-      
-  {{app-info.store}} <br>
-  {{app-info.store}} <br>
 
-
-
-  {{app-info.hasInAppPurchases}} <br>
-  {{app-info.rating}} <br>
-  {{app-info.isValid}} <br>
-  <label>Select Menu
-  <select>
-    {{#each app-info.countryList}}
-    <option value="{{this}}">{{this}} {{@index}}</option>
-    {{/each}}
-  </select>
-</label>
-  
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
+
+

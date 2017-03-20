@@ -74,12 +74,19 @@ body {
   }
 
 }
-.o-pane-appcard {
-  min-width: 500px;
+.o-appcard {
+  &__title {
+    display: inline-block;
+  }
+
+  &__slider {
+    padding-top: 5%;
+  }
 }
 
 .o-version-tabs {
   // overflow-y: scroll;
+  margin-top: 25px;
   .vertical {
     height: 220px;
     overflow-y: scroll;
@@ -159,14 +166,8 @@ body {
   }
 }
 
-
 .-semi-trans {
   opacity: .5
-}
-
-.-pad {
-  padding: 8px 10px!important;
-  background: red;
 }
 
 .-relative {
