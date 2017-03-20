@@ -28,3 +28,10 @@ button,
     color: white;
   }
 }
+
+.button.green {
+  background: mediumseagreen;;
+  &:hover {
+    background: seagreen;;
+  }
+}

@@ -1,5 +1,59 @@
 .c-keyword {
+  // background-color: olive;
+  // display: block;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+
   &__title {
-    
+    font-size: 15px;
+    font-weight: bold;
   }
+
+  &__add {
+    width: 100%;
+  }
+
+  &__sub {
+    display: flex;
+  }
+
+  &__indicator {
+    // font-size: 40px;
+    position: absolute;
+    top: 40%;
+  }
+
+  
+
+  &:nth-of-type(3),
+  &.-is-active {
+    // display: block;
+    background-color: white;
+    color: dodgerblue;
+    left: -40px;
+    position: relative;
+    width: calc(100% + 80px);
+    box-shadow: 3px 3px 15px rgba(55,55,55,.3);
+    // transform: traslateY(-25%);
+    z-index: 4;
+  }
+}
+
+.arrow-up {
+  border-bottom: 15px solid mediumseagreen;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  color: mediumseagreen;
+  height: 0; 
+  width: 0; 
+}
+
+.arrow-down {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #cc4b37;
+  color: #cc4b37;
+  height: 0; 
+  width: 0; 
 }

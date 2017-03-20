@@ -26,6 +26,65 @@ search:
    storetype: apple
    storename: Apple Appstore
 
+keyword-list: 
+  - numberOfApps: 66196
+    combinationKeyword: false
+    searchVolume: 66
+    rank: 0
+    appTitleKeywordMatch: false
+    change: 0
+    dir: none
+    pinned: false
+    keyword: free
+    chance: 37
+    onITunes: false
+  - numberOfApps: 3380
+    combinationKeyword: false
+    searchVolume: 37
+    rank: 0
+    appTitleKeywordMatch: false
+    change: 0
+    dir: none
+    pinned: false
+    keyword: listen
+    chance: 40
+    onITunes: false
+  - numberOfApps: 106163
+    combinationKeyword: false
+    searchVolume: 79
+    rank: 4
+    appTitleKeywordMatch: true
+    change: 0
+    dir: none
+    pinned: false
+    keyword: music
+    chance: 23
+    onITunes: false
+  - numberOfApps: 2052
+    combinationKeyword: false
+    searchVolume: 50
+    rank: 7
+    appTitleKeywordMatch: false
+    change: -2
+    dir: down
+    pinned: false
+    keyword: playlist
+    chance: 40
+    onITunes: false
+  - numberOfApps: 20440
+    combinationKeyword: false
+    searchVolume: 49
+    rank: 4
+    appTitleKeywordMatch: false
+    change: 3
+    dir: up
+    pinned: false
+    keyword: song
+    chance: 40
+    onITunes: false
+
+   
+
 ---
 {{> l-header}}
 
@@ -53,15 +112,29 @@ search:
     <hr>
       <canvas id="myChart" width="400px" height="200px"></canvas>
     </div>
-  <div class="large-1 columns">
-    {{#each keywords}}
+  <div class="large-2 column">
+    {{#each keyword-list}}
     <div class="c-keyword">
-      {{this.keyword}}
+    <div class="c-keyword__indicator arrow-{{this.dir}}"></div>
+      <div class="c-keyword__title">
+         {{this.keyword}}
+      </div>
+      <div class="c-keyword__sub">
+        <span>rank: {{this.rank}}</span>
+      </div>
     </div>
     {{/each}}
+    <div class="c-keyword">
+        <!--start Add btn-->
+        <button class="button green c-keyword__add" type="button">
+          <!--<span class="show-for-sr">Delete App</span>-->
+         <i class="icon-plus-squared"></i> ADD
+        </button>
+    </div>
   </div>
+        
   
-  <div class="large-4 columns callout">
+  <div class="large-3 columns callout">
     <div class="o-flag">
       <a class="o-flag__icon"><img class="-responsive" src="./assets/img/usa.png" alt=""></a>
       <a class="dropdown button secondary arrow-only">
